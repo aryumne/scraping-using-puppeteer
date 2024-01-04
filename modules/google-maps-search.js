@@ -62,7 +62,7 @@ const googleMapsSearch = async (keyword) => {
   }
 
   fs.writeFileSync("./exports/listToko.json", JSON.stringify(data, null, 2));
-  console.log("Scraming done!");
+  console.log("Scraping done!");
   await browser.close();
 };
 
