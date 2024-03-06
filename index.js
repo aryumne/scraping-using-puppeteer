@@ -1,6 +1,6 @@
 import googleMapsSearch from "./modules/google-maps-search.js";
 import interceptNetworks from "./modules/intercept-networks.js";
-import instagramSearch from "./modules/instagram-search.js";
+import instagramScraping from "./modules/instagram-scraping.js";
 
 const main = async () => {
   // await googleMapsSearch("Toko kopi"); // search keyword on google maps
@@ -11,9 +11,9 @@ const main = async () => {
    * close all the chromes that are currently opened
    * run command in terminal "/usr/bin/google-chrome-stable --remote-debugging-port=9222"
    * open instagram.com, then login if you have not logged in
-   * comment all functions except this line "await instagramSearch();"
+   * comment all functions except this line "await instagramScraping();"
    */
-  await instagramSearch();
+  await instagramScraping();
 };
 
 main();

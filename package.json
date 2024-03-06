@@ -6,11 +6,13 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "syncma": "node plugins/dbConnection.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "aryumne",
   "license": "ISC",
   "dependencies": {
+    "mongodb": "^6.4.0",
     "puppeteer": "^21.6.0"
   }
 }
