@@ -1,0 +1,15 @@
+- taken_at
+- caption.text
+- original_width
+- original_height
+- comment_count
+- like_count
+- owner
+- product_type
+    // FOR carousel_container
+    - carousel_media_count
+    - carousel_media
+    // FOR feed
+    - video_versions
+    - video_duration
+    - has_audio
