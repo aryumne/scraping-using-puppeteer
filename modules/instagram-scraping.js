@@ -1,7 +1,8 @@
 import puppeteer from "puppeteer";
 import fs from "fs";
-const instagramSearch = async () => {
+const instagramScraping = async () => {
   const browser = await puppeteer.connect({
+    defaultViewport: false,
     browserURL: "http://localhost:9222",
   });
   const pages = await browser.pages();
@@ -73,7 +74,7 @@ const instagramSearch = async () => {
   let counter = 0;
   for (const item of hashtags) {
     // if (item.position === 17) break;
-    if (counter === 5) break;
+    if (counter === 1) break;
     const url = `https://www.instagram.com/explore/tags/${item.hashtag.name}/`;
     console.log(counter + ". " + url);
     try {

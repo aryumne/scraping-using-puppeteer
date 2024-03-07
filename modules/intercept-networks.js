@@ -4,6 +4,7 @@ import fs from "fs";
 const interceptNetworks = async () => {
   const browser = await puppeteer.launch({
     headless: false,
+    defaultViewport: false,
     executablePath: "/usr/bin/google-chrome-stable",
   });
   const page = await browser.newPage();
